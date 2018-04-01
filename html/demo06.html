@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>属性选择器</title>
+    <style type="text/css">
+        /*
+            选取含有title属性的p元素，设置其背景色为黄色
+         */
+        p[title]{
+            background-color: yellow;
+        }
+
+        p[title='abc']{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <p title="abc">我是一个段落</p>
+    <p>我是一个段落</p>
+    <p title="abc">我是一个段落</p>
+    <p>我是一个段落</p>
+    <p title="cde">我是一个段落</p>
+</body>
+</html>
