@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>兄弟元素选择器</title>
+    <style type="text/css">
+        /*
+        *选择span紧挨着的兄弟p元素
+         */
+        /*span + p{
+            background-color: yellow;
+        }*/
+
+        /*
+       *选择span所有的兄弟p元素
+        */
+        span ~ p{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <p>我是一个段落</p>
+    <p>我是一个段落</p>
+    <p>我是一个段落</p>
+    <span>我是一个span</span>
+    <p>我是一个段落</p>
+    <p>我是一个段落</p>
+    <p>我是一个段落</p>
+</body>
+</html>
