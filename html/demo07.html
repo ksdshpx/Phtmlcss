@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>子元素的伪类</title>
+    <style type="text/css">
+       /* p:first-child{
+            background-color: yellow;
+        }
+
+        p:last-child{
+            background-color: green;
+        }
+
+        p:nth-child(2){
+            background-color: purple;
+        }*/
+
+        /*p:nth-child(even){
+            background-color: aqua;
+        }*/
+        /*
+           区别
+           p:first-child表示p元素的父类的第一个孩子节点（该节点可以不是p）
+           p:first-of-type表示p元素的父类的第一个p孩子节点
+         */
+        p:first-of-type{
+            background-color: yellow;
+        }
+
+        p:last-of-type{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <span>hello</span>
+    <p>我是一个段落</p>
+    <p>我是一个段落</p>
+    <p>我是一个段落</p>
+    <p>我是一个段落</p>
+    <p>我是一个段落</p>
+    <p>我是一个段落</p>
+</body>
+</html>
