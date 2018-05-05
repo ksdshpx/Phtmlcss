@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>overflow属性</title>
+    <style type="text/css">
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bbffaa;
+            /*overflow: hidden;*/
+            /*
+            区别：scroll无论溢出与否都会添加滚动条，而auto会根据是否溢出判断要不要加滚动条
+            /*overflow: scroll;*/
+            overflow: auto;
+        }
+
+        .box2{
+            width: 100px;
+            height: 500px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2">
+
+        </div>
+    </div>
+</body>
+</html>
