@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>display和visibility</title>
+    <style type="text/css">
+        a{
+            background-color: #bbffaa;
+            /*display: block;*/
+            /*
+               inline-block:行内块元素，既可以设置宽和高，又不独占一行
+               display:none:不显示元素，且不继续占有位置。而visibility:hidden:不显示元素，但继续占有位置
+            */
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">我是一个大大的超链接</a>
+    <span>hello</span>
+</body>
+</html>
